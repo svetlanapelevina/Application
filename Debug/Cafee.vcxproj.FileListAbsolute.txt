@@ -6,3 +6,11 @@ C:\Users\misha\source\repos\Cafee\Debug\Cafee.exe
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.pdb
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.vcxprojAssemblyReference.cache
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.ChangeAndDelete.resources
+D:\Application\Debug\Cafee.vcxprojAssemblyReference.cache
+D:\Application\Debug\Cafee.Add.resources
+D:\Application\Debug\Cafee.ChangeAndDelete.resources
+D:\Application\Debug\Cafee.MainForm.resources
+D:\Application\Debug\Cafee.MyForm.resources
+D:\Application\Debug\Cafee.vcxproj.GenerateResource.cache
+D:\Application\Debug\Cafee.exe
+D:\Application\Debug\Cafee.pdb

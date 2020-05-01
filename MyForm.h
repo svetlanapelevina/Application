@@ -580,6 +580,7 @@ namespace Cafee {
 			saveFileDialog1->Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
 			fileName = saveFileDialog1->FileName;
 		}
+		else return;
 		ifstream file(msclr::interop::marshal_as<std::string>(fileName));
 		char str[50], name[50], cost[50], info[50];
 		file >> str;

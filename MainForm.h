@@ -61,6 +61,8 @@ namespace Cafee {
 
 	private: System::Windows::Forms::FolderBrowserDialog^ folderBrowserDialog1;
 	private: System::Windows::Forms::Button^ buttonChangeDelete;
+	private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
+	private: System::Windows::Forms::SaveFileDialog^ saveFileDialog1;
 
 
 
@@ -105,6 +107,8 @@ namespace Cafee {
 			this->Exit = (gcnew System::Windows::Forms::Button());
 			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
 			this->buttonChangeDelete = (gcnew System::Windows::Forms::Button());
+			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
+			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -254,6 +258,10 @@ namespace Cafee {
 			this->buttonChangeDelete->UseVisualStyleBackColor = true;
 			this->buttonChangeDelete->Click += gcnew System::EventHandler(this, &MainForm::buttonChangeDelete_Click);
 			// 
+			// openFileDialog1
+			// 
+			this->openFileDialog1->FileName = L"openFileDialog1";
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 18);
@@ -357,7 +365,37 @@ namespace Cafee {
 		}
 	}
 	private: System::Void openToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		
+		String^ fileName;
+		if (openFileDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			openFileDialog1->Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+			saveFileDialog1->Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+			fileName = saveFileDialog1->FileName;
+		}
+		else return;
+		ifstream file(msclr::interop::marshal_as<std::string>(fileName));
+		char str[50], name[50], cost[50], info[50];
+		file >> str;
+		while (!String(str).Empty)
+		{
+			file >> name;
+			file >> cost;
+			file >> info;
+			switch (atoi(str))
+			{
+			case 1:
+				Source::addElement(new Dish(name, atoi(cost), info));
+				break;
+			case 2:
+				Source::addElement(new Drink(name, atoi(cost), info));
+				break;
+			case 3:
+				Source::addElement(new Dessert(name, atoi(cost), info));
+				break;
+			}
+			file >> str;
+		}
+		file.close();
 	}
 	private: System::Void folderBrowserDialog1_HelpRequest(System::Object^ sender, System::EventArgs^ e) {
 	}

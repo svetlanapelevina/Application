@@ -1,7 +1,17 @@
-﻿  MainForm.cpp
-C:\Users\misha\source\repos\Cafee\ChangeAndDelete.h(283,14): warning C4018: >=: несоответствие типов со знаком и без знака
-C:\Users\misha\source\repos\Cafee\ChangeAndDelete.h(301,14): warning C4018: >=: несоответствие типов со знаком и без знака
+﻿  Add.cpp
+  ChangeAndDelete.cpp
+D:\Application\ChangeAndDelete.h(283,14): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\Application\ChangeAndDelete.h(301,14): warning C4018: >=: несоответствие типов со знаком и без знака
+  Dessert.cpp
+  Dish.cpp
+  Drink.cpp
+  MainForm.cpp
+D:\Application\ChangeAndDelete.h(283,14): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\Application\ChangeAndDelete.h(301,14): warning C4018: >=: несоответствие типов со знаком и без знака
+  Meal.cpp
   MyForm.cpp
+  Source.cpp
+D:\Application\Source.cpp(10,24): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
   Add.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Cafee.vcxproj -> C:\Users\misha\source\repos\Cafee\Debug\Cafee.exe
+  Cafee.vcxproj -> D:\Application\Debug\Cafee.exe
