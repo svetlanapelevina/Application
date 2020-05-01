@@ -16,5 +16,5 @@ public:
 	string getName();
 	void setCost(int cost1);
 	int getCost();
-	string toString();
+	virtual string toString();
 };

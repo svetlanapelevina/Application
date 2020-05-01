@@ -12,5 +12,5 @@ string Drink::getVolume() { return volume; }
 
 string Drink::toString()
 {
-	return "," + Meal::toString() + "," + this->getVolume();
+	return " " + Meal::toString() + " " + this->getVolume() + " ";
 }

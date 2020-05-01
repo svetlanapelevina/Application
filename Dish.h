@@ -12,7 +12,7 @@ public:
 	Dish(string name1, int cost1, string components1);
 	void setComponents(string components1);
 	string getComponents();
-	string toString();
+	string toString() override;
 };
 
 

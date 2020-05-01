@@ -1,4 +1,5 @@
   Cafee.Add.resources - Embedded, ContainedInManifestFile, 
+  Cafee.ChangeAndDelete.resources - Embedded, ContainedInManifestFile, 
   Cafee.MainForm.resources - Embedded, ContainedInManifestFile, 
   Cafee.MyForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -19,6 +20,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Class Cafee.Add: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Cafee.ChangeAndDelete: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Cafee.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

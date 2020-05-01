@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Add.cpp" />
+    <ClCompile Include="ChangeAndDelete.cpp" />
     <ClCompile Include="Dessert.cpp" />
     <ClCompile Include="Dish.cpp" />
     <ClCompile Include="Drink.cpp" />
@@ -133,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Add.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ChangeAndDelete.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Dessert.h" />
@@ -150,6 +154,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeAndDelete.resx">
+      <DependentUpon>ChangeAndDelete.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>

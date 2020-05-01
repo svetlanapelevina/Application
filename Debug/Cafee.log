@@ -1,4 +1,6 @@
 ﻿  MainForm.cpp
+C:\Users\misha\source\repos\Cafee\ChangeAndDelete.h(283,14): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Users\misha\source\repos\Cafee\ChangeAndDelete.h(301,14): warning C4018: >=: несоответствие типов со знаком и без знака
   MyForm.cpp
   Создание кода...
   Add.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка

@@ -1,6 +1,7 @@
 #pragma once
 #include "MyForm.h"
 #include "Add.h"
+#include "ChangeAndDelete.h"
 #include <iostream>
 #include <fstream>
 
@@ -59,6 +60,7 @@ namespace Cafee {
 	private: System::Windows::Forms::Button^ Exit;
 
 	private: System::Windows::Forms::FolderBrowserDialog^ folderBrowserDialog1;
+	private: System::Windows::Forms::Button^ buttonChangeDelete;
 
 
 
@@ -102,6 +104,7 @@ namespace Cafee {
 			this->ShowMenu = (gcnew System::Windows::Forms::Button());
 			this->Exit = (gcnew System::Windows::Forms::Button());
 			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
+			this->buttonChangeDelete = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -110,9 +113,9 @@ namespace Cafee {
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30.25F));
-			this->label1->Location = System::Drawing::Point(358, 36);
+			this->label1->Location = System::Drawing::Point(346, 36);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(127, 47);
+			this->label1->Size = System::Drawing::Size(157, 59);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Êàôå";
 			this->label1->Click += gcnew System::EventHandler(this, &MainForm::label1_Click);
@@ -120,7 +123,7 @@ namespace Cafee {
 			// AddMeal
 			// 
 			this->AddMeal->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
-			this->AddMeal->Location = System::Drawing::Point(319, 220);
+			this->AddMeal->Location = System::Drawing::Point(319, 208);
 			this->AddMeal->Margin = System::Windows::Forms::Padding(35, 32, 35, 32);
 			this->AddMeal->Name = L"AddMeal";
 			this->AddMeal->Size = System::Drawing::Size(216, 50);
@@ -139,7 +142,7 @@ namespace Cafee {
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(5, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(850, 24);
+			this->menuStrip1->Size = System::Drawing::Size(850, 28);
 			this->menuStrip1->TabIndex = 2;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -150,40 +153,41 @@ namespace Cafee {
 					this->îòêğûòüToolStripMenuItem, this->ñîõğàíèòüToolStripMenuItem, this->ñîõğàíèòüÊàêToolStripMenuItem, this->exitToolStripMenuItem
 			});
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(48, 20);
+			this->toolStripMenuItem1->Size = System::Drawing::Size(59, 24);
 			this->toolStripMenuItem1->Text = L"Ôàéë";
 			// 
 			// ñîçäàòüToolStripMenuItem
 			// 
 			this->ñîçäàòüToolStripMenuItem->Name = L"ñîçäàòüToolStripMenuItem";
-			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->ñîçäàòüToolStripMenuItem->Text = L"Ñîçäàòü";
+			this->ñîçäàòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::ñîçäàòüToolStripMenuItem_Click);
 			// 
 			// îòêğûòüToolStripMenuItem
 			// 
 			this->îòêğûòüToolStripMenuItem->Name = L"îòêğûòüToolStripMenuItem";
-			this->îòêğûòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->îòêğûòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->îòêğûòüToolStripMenuItem->Text = L"Îòêğûòü";
 			this->îòêğûòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::openToolStripMenuItem_Click);
 			// 
 			// ñîõğàíèòüToolStripMenuItem
 			// 
 			this->ñîõğàíèòüToolStripMenuItem->Name = L"ñîõğàíèòüToolStripMenuItem";
-			this->ñîõğàíèòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->ñîõğàíèòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->ñîõğàíèòüToolStripMenuItem->Text = L"Ñîõğàíèòü";
 			this->ñîõğàíèòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::saveToolStripMenuItem_Click);
 			// 
 			// ñîõğàíèòüÊàêToolStripMenuItem
 			// 
 			this->ñîõğàíèòüÊàêToolStripMenuItem->Name = L"ñîõğàíèòüÊàêToolStripMenuItem";
-			this->ñîõğàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->ñîõğàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->ñîõğàíèòüÊàêToolStripMenuItem->Text = L"Ñîõğàíèòü êàê";
 			this->ñîõğàíèòüÊàêToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::saveToToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->exitToolStripMenuItem->Text = L"Âûõîä";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::exitToolStripMenuItem_Click);
 			// 
@@ -194,27 +198,27 @@ namespace Cafee {
 					this->îÏğîãğàììåToolStripMenuItem
 			});
 			this->ñïğàâêàToolStripMenuItem->Name = L"ñïğàâêàToolStripMenuItem";
-			this->ñïğàâêàToolStripMenuItem->Size = System::Drawing::Size(65, 20);
+			this->ñïğàâêàToolStripMenuItem->Size = System::Drawing::Size(81, 24);
 			this->ñïğàâêàToolStripMenuItem->Text = L"Ñïğàâêà";
 			// 
 			// ğóêîâîäñòâîToolStripMenuItem
 			// 
 			this->ğóêîâîäñòâîToolStripMenuItem->Name = L"ğóêîâîäñòâîToolStripMenuItem";
-			this->ğóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(149, 22);
+			this->ğóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(187, 26);
 			this->ğóêîâîäñòâîToolStripMenuItem->Text = L"Ğóêîâîäñòâî";
 			this->ğóêîâîäñòâîToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::textToolStripMenuItem_Click);
 			// 
 			// îÏğîãğàììåToolStripMenuItem
 			// 
 			this->îÏğîãğàììåToolStripMenuItem->Name = L"îÏğîãğàììåToolStripMenuItem";
-			this->îÏğîãğàììåToolStripMenuItem->Size = System::Drawing::Size(149, 22);
+			this->îÏğîãğàììåToolStripMenuItem->Size = System::Drawing::Size(187, 26);
 			this->îÏğîãğàììåToolStripMenuItem->Text = L"Î ïğîãğàììå";
 			this->îÏğîãğàììåToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::îÏğîãğàììåToolStripMenuItem_Click);
 			// 
 			// ShowMenu
 			// 
 			this->ShowMenu->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
-			this->ShowMenu->Location = System::Drawing::Point(319, 132);
+			this->ShowMenu->Location = System::Drawing::Point(319, 127);
 			this->ShowMenu->Margin = System::Windows::Forms::Padding(35, 32, 35, 32);
 			this->ShowMenu->Name = L"ShowMenu";
 			this->ShowMenu->Size = System::Drawing::Size(216, 50);
@@ -238,11 +242,24 @@ namespace Cafee {
 			// 
 			this->folderBrowserDialog1->HelpRequest += gcnew System::EventHandler(this, &MainForm::folderBrowserDialog1_HelpRequest);
 			// 
+			// buttonChangeDelete
+			// 
+			this->buttonChangeDelete->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
+			this->buttonChangeDelete->Location = System::Drawing::Point(319, 291);
+			this->buttonChangeDelete->Margin = System::Windows::Forms::Padding(35, 32, 35, 32);
+			this->buttonChangeDelete->Name = L"buttonChangeDelete";
+			this->buttonChangeDelete->Size = System::Drawing::Size(216, 50);
+			this->buttonChangeDelete->TabIndex = 5;
+			this->buttonChangeDelete->Text = L"Ğåäàêòèğîâàíèå";
+			this->buttonChangeDelete->UseVisualStyleBackColor = true;
+			this->buttonChangeDelete->Click += gcnew System::EventHandler(this, &MainForm::buttonChangeDelete_Click);
+			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(7, 14);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 18);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(850, 486);
+			this->Controls->Add(this->buttonChangeDelete);
 			this->Controls->Add(this->Exit);
 			this->Controls->Add(this->AddMeal);
 			this->Controls->Add(this->menuStrip1);
@@ -286,14 +303,7 @@ namespace Cafee {
 
 			if (result == System::Windows::Forms::DialogResult::Yes)
 			{
-				auto result = MessageBox::Show("Âû óâåğåíû ÷òî õîòèòå âûéòè?", "Âûõîä",
-					MessageBoxButtons::YesNo,
-					MessageBoxIcon::Question);
-
-				if (result == System::Windows::Forms::DialogResult::Yes)
-				{
-					Application::Exit();
-				}
+				Application::Exit();
 			}
 		}
 		private: System::Void textToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -347,17 +357,28 @@ namespace Cafee {
 		}
 	}
 	private: System::Void openToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		auto result = MessageBox::Show("Âû óâåğåíû ÷òî õîòèòå âûéòè?", "Âûõîä",
-			MessageBoxButtons::YesNo,
-			MessageBoxIcon::Question);
-
-		if (result == System::Windows::Forms::DialogResult::Yes)
-		{
-			Application::Exit();
-		}
-		Source::AllMeals->clear();
+		
 	}
 	private: System::Void folderBrowserDialog1_HelpRequest(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void buttonChangeDelete_Click(System::Object^ sender, System::EventArgs^ e) {
+	ChangeAndDelete^ form4 = gcnew ChangeAndDelete();
+	form4->Show();
+}
+private: System::Void ñîçäàòüToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	auto result = MessageBox::Show("Ñîõğàíèòü òåêóùèå äàííûå?", "Ñîõğàíåíèå",
+		MessageBoxButtons::YesNo,
+		MessageBoxIcon::Question);
+
+	if (result == System::Windows::Forms::DialogResult::Yes)
+	{
+		ofstream file("save.txt");
+		for (Meal* meal : *Source::AllMeals)
+		{
+			file << meal->toString() << "\n";
+		}
+	}
+	Source::AllMeals->clear();
 	}
 };
 }

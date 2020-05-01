@@ -12,5 +12,5 @@ string Dish::getComponents() { return components; }
 
 string Dish::toString()
 {
-	return "," + Meal::toString() + "," + this->getComponents();
+	return " " + Meal::toString() + " " + this->getComponents() + " ";
 }

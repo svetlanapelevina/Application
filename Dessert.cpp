@@ -12,5 +12,5 @@ string Dessert::getType() { return type; }
 
 string Dessert::toString()
 {
-	return "," + Meal::toString() + "," + this->getType();
+	return " " + Meal::toString() + " " + this->getType() + " ";
 }

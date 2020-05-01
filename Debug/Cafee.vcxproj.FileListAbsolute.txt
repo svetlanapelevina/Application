@@ -5,3 +5,4 @@ C:\Users\misha\source\repos\Cafee\Debug\Cafee.vcxproj.GenerateResource.cache
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.exe
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.pdb
 C:\Users\misha\source\repos\Cafee\Debug\Cafee.vcxprojAssemblyReference.cache
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.ChangeAndDelete.resources

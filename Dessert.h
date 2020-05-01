@@ -8,6 +8,6 @@ public:
 	Dessert(string name1, int cost1, string type1);
 	void Dessert::setType(string type1);
 	string Dessert::getType();
-	string toString();
+	string toString() override;
 };
 

@@ -27,7 +27,7 @@ string Meal::toString()
 {
 	ostringstream ss;
 	ss << this->getNumber();
-	ss << "," + this->getName() + ",";
+	ss << " " + this->getName() + " ";
 	ss << this->getCost();;
 	return ss.str();
 }
