@@ -1,0 +1,7 @@
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.Add.resources
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.MainForm.resources
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.MyForm.resources
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.vcxproj.GenerateResource.cache
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.exe
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.pdb
+C:\Users\misha\source\repos\Cafee\Debug\Cafee.vcxprojAssemblyReference.cache
