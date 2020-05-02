@@ -2,7 +2,7 @@
 #include "Meal.h"
 class Dessert : public Meal
 {
-protected:
+private:
 	string type;
 public:
 	Dessert(string name1, int cost1, string type1);
