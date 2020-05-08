@@ -113,9 +113,10 @@ namespace Cafee {
 			});
 			this->listViewChangeDelete->HideSelection = false;
 			this->listViewChangeDelete->LabelEdit = true;
-			this->listViewChangeDelete->Location = System::Drawing::Point(29, 29);
+			this->listViewChangeDelete->Location = System::Drawing::Point(22, 24);
+			this->listViewChangeDelete->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->listViewChangeDelete->Name = L"listViewChangeDelete";
-			this->listViewChangeDelete->Size = System::Drawing::Size(525, 437);
+			this->listViewChangeDelete->Size = System::Drawing::Size(395, 356);
 			this->listViewChangeDelete->TabIndex = 0;
 			this->listViewChangeDelete->UseCompatibleStateImageBehavior = false;
 			this->listViewChangeDelete->View = System::Windows::Forms::View::Details;
@@ -148,26 +149,29 @@ namespace Cafee {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.25F));
-			this->label2->Location = System::Drawing::Point(599, 87);
+			this->label2->Location = System::Drawing::Point(449, 71);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(197, 19);
+			this->label2->Size = System::Drawing::Size(160, 16);
 			this->label2->TabIndex = 3;
 			this->label2->Text = L"Введите номер элемента:";
 			this->label2->Click += gcnew System::EventHandler(this, &ChangeAndDelete::label2_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(603, 109);
+			this->textBox1->Location = System::Drawing::Point(452, 89);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(189, 22);
+			this->textBox1->Size = System::Drawing::Size(143, 20);
 			this->textBox1->TabIndex = 4;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &ChangeAndDelete::textBox1_TextChanged);
 			// 
 			// buttonChange
 			// 
-			this->buttonChange->Location = System::Drawing::Point(655, 324);
+			this->buttonChange->Location = System::Drawing::Point(491, 263);
+			this->buttonChange->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonChange->Name = L"buttonChange";
-			this->buttonChange->Size = System::Drawing::Size(98, 28);
+			this->buttonChange->Size = System::Drawing::Size(74, 23);
 			this->buttonChange->TabIndex = 5;
 			this->buttonChange->Text = L"Изменить";
 			this->buttonChange->UseVisualStyleBackColor = true;
@@ -175,9 +179,10 @@ namespace Cafee {
 			// 
 			// buttonDelete
 			// 
-			this->buttonDelete->Location = System::Drawing::Point(655, 380);
+			this->buttonDelete->Location = System::Drawing::Point(491, 309);
+			this->buttonDelete->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonDelete->Name = L"buttonDelete";
-			this->buttonDelete->Size = System::Drawing::Size(98, 30);
+			this->buttonDelete->Size = System::Drawing::Size(74, 24);
 			this->buttonDelete->TabIndex = 6;
 			this->buttonDelete->Text = L"Удалить";
 			this->buttonDelete->UseVisualStyleBackColor = true;
@@ -185,9 +190,10 @@ namespace Cafee {
 			// 
 			// buttonBack
 			// 
-			this->buttonBack->Location = System::Drawing::Point(29, 491);
+			this->buttonBack->Location = System::Drawing::Point(22, 399);
+			this->buttonBack->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->buttonBack->Name = L"buttonBack";
-			this->buttonBack->Size = System::Drawing::Size(96, 31);
+			this->buttonBack->Size = System::Drawing::Size(72, 25);
 			this->buttonBack->TabIndex = 7;
 			this->buttonBack->Text = L"Назад";
 			this->buttonBack->UseVisualStyleBackColor = true;
@@ -197,44 +203,50 @@ namespace Cafee {
 			// 
 			this->comboBoxField->FormattingEnabled = true;
 			this->comboBoxField->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Название", L"Стоимость" });
-			this->comboBoxField->Location = System::Drawing::Point(607, 212);
+			this->comboBoxField->Location = System::Drawing::Point(455, 172);
+			this->comboBoxField->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBoxField->Name = L"comboBoxField";
-			this->comboBoxField->Size = System::Drawing::Size(189, 24);
+			this->comboBoxField->Size = System::Drawing::Size(143, 21);
 			this->comboBoxField->TabIndex = 8;
+			this->comboBoxField->SelectedIndexChanged += gcnew System::EventHandler(this, &ChangeAndDelete::comboBoxField_SelectedIndexChanged);
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.25F));
-			this->label1->Location = System::Drawing::Point(605, 256);
+			this->label1->Location = System::Drawing::Point(454, 208);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(194, 19);
+			this->label1->Size = System::Drawing::Size(159, 16);
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"Введите новое значение:";
 			this->label1->Click += gcnew System::EventHandler(this, &ChangeAndDelete::label1_Click_1);
 			// 
 			// textBoxNew
 			// 
-			this->textBoxNew->Location = System::Drawing::Point(607, 278);
+			this->textBoxNew->Location = System::Drawing::Point(455, 226);
+			this->textBoxNew->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBoxNew->Name = L"textBoxNew";
-			this->textBoxNew->Size = System::Drawing::Size(189, 22);
+			this->textBoxNew->Size = System::Drawing::Size(143, 20);
 			this->textBoxNew->TabIndex = 10;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.25F));
-			this->label3->Location = System::Drawing::Point(639, 190);
+			this->label3->Location = System::Drawing::Point(479, 154);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(126, 19);
+			this->label3->Size = System::Drawing::Size(102, 16);
 			this->label3->TabIndex = 11;
 			this->label3->Text = L"Выберите поле:";
 			// 
 			// Refresh
 			// 
-			this->Refresh->Location = System::Drawing::Point(430, 491);
+			this->Refresh->Location = System::Drawing::Point(322, 399);
+			this->Refresh->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Refresh->Name = L"Refresh";
-			this->Refresh->Size = System::Drawing::Size(102, 31);
+			this->Refresh->Size = System::Drawing::Size(76, 25);
 			this->Refresh->TabIndex = 12;
 			this->Refresh->Text = L"Обновить";
 			this->Refresh->UseVisualStyleBackColor = true;
@@ -242,9 +254,9 @@ namespace Cafee {
 			// 
 			// ChangeAndDelete
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(840, 548);
+			this->ClientSize = System::Drawing::Size(630, 445);
 			this->Controls->Add(this->Refresh);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->textBoxNew);
@@ -256,6 +268,7 @@ namespace Cafee {
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->listViewChangeDelete);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"ChangeAndDelete";
 			this->ResumeLayout(false);
@@ -301,17 +314,25 @@ private: System::Void buttonChange_Click(System::Object^ sender, System::EventAr
 		if (number >= Source::AllMeals->size()) MessageBox::Show("Неверый номер!", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		else
 		{
+			if (textBoxNew->Text->CompareTo("") == 0)
+			{
+				MessageBox::Show("Введите новое значение!", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				return;
+			}
 			string newww = msclr::interop::marshal_as<std::string>(textBoxNew->Text);
 			switch (comboBoxField->SelectedIndex)
 			{
 			case 0:
-				Source::changeName(number, newww); break;
+				Source::changeName(number, newww); 
+				MessageBox::Show("Изменения сохранены", "Успешно", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				break;
 			case 1:
-				Source::changeCost(number, newww); break;
+				Source::changeCost(number, newww); 
+				MessageBox::Show("Изменения сохранены", "Успешно", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				break;
+			default:
+				MessageBox::Show("Укажите поле!", "",MessageBoxButtons::OK,MessageBoxIcon::Error);
 			}
-			MessageBox::Show("Изменения сохранены", "Успешно",
-				MessageBoxButtons::OK,
-				MessageBoxIcon::Information);
 		}
 	}
 }
@@ -329,6 +350,8 @@ private: System::Void Refresh_Click(System::Object^ sender, System::EventArgs^ e
 			if (k++ != 0) listViewChangeDelete->Items[i]->SubItems->Add(gcnew System::String(str.c_str(), 0, str.length()));
 		i++;
 	}
+}
+private: System::Void comboBoxField_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

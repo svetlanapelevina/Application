@@ -1,0 +1,12 @@
+﻿  ChangeAndDelete.cpp
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\ChangeAndDelete.h(37,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\ChangeAndDelete.h(350,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  MainForm.cpp
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\MyForm.h(41,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\MyForm.h(473,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\MyForm.h(539,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\ChangeAndDelete.h(37,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\pelev\OneDrive\Рабочий стол\Application-master\ChangeAndDelete.h(350,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  Add.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Cafee.vcxproj -> C:\Users\pelev\OneDrive\Рабочий стол\Application-master\x64\Debug\Cafee.exe

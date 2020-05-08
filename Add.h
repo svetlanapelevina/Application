@@ -252,21 +252,44 @@ namespace Cafee {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox1->Text->CompareTo("") == 0)
+		{
+			MessageBox::Show("Введите название!", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
 		string newName = msclr::interop::marshal_as<std::string>(textBox1->Text);
+		if (textBox2->Text->CompareTo("") == 0)
+		{
+			MessageBox::Show("Введите стоимость!", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
 		string newCost = msclr::interop::marshal_as<std::string>(textBox2->Text);
 		string newInfo = msclr::interop::marshal_as<std::string>(textBox3->Text);
 		switch (comboBox1->SelectedIndex)
 		{
 		case 0:
-			Source::AllMeals->push_back(new Dish(newName, atoi(newCost.c_str()), newInfo)); break;
+			Source::AllMeals->push_back(new Dish(newName, atoi(newCost.c_str()), newInfo)); 
+			MessageBox::Show("Блюдо успешно добавлено", "",
+				MessageBoxButtons::OK,
+				MessageBoxIcon::Information);
+			break;
 		case 1:
-			Source::AllMeals->push_back(new Drink(newName, atoi(newCost.c_str()), newInfo)); break;
+			Source::AllMeals->push_back(new Drink(newName, atoi(newCost.c_str()), newInfo)); 
+			MessageBox::Show("Блюдо успешно добавлено", "",
+				MessageBoxButtons::OK,
+				MessageBoxIcon::Information);
+			break;
 		case 2:
-			Source::AllMeals->push_back(new Dessert(newName, atoi(newCost.c_str()), newInfo)); break;
+			Source::AllMeals->push_back(new Dessert(newName, atoi(newCost.c_str()), newInfo)); 
+			MessageBox::Show("Блюдо успешно добавлено", "",
+				MessageBoxButtons::OK,
+				MessageBoxIcon::Information);
+			break;
+		default:
+			MessageBox::Show("Укажите тип!", "",
+				MessageBoxButtons::OK,
+				MessageBoxIcon::Error);
 		}
-		auto result = MessageBox::Show("Блюдо успешно добавлено", "",
-			MessageBoxButtons::OK,
-			MessageBoxIcon::Information);
 	}
 	private: System::Void checkedListBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
