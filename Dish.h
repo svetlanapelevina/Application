@@ -6,7 +6,7 @@ using namespace std;
 class Dish :
 	public Meal
 {
-protected:
+private:
 	string components;
 public:
 	Dish(string name1, int cost1, string components1);
