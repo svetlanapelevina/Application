@@ -134,7 +134,7 @@ namespace Cafee {
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Основное блюдо", L"Напиток", L"Десерт" });
 			this->comboBox1->Location = System::Drawing::Point(217, 3);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(208, 26);
+			this->comboBox1->Size = System::Drawing::Size(208, 22);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Add::comboBox1_SelectedIndexChanged);
 			// 
@@ -183,7 +183,7 @@ namespace Cafee {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->textBox1->Location = System::Drawing::Point(217, 58);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(208, 26);
+			this->textBox1->Size = System::Drawing::Size(208, 22);
 			this->textBox1->TabIndex = 3;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &Add::textBox1_TextChanged);
 			// 
@@ -194,7 +194,7 @@ namespace Cafee {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->textBox2->Location = System::Drawing::Point(217, 108);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(208, 26);
+			this->textBox2->Size = System::Drawing::Size(208, 22);
 			this->textBox2->TabIndex = 4;
 			// 
 			// textBox3
@@ -204,7 +204,7 @@ namespace Cafee {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->textBox3->Location = System::Drawing::Point(217, 161);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(208, 26);
+			this->textBox3->Size = System::Drawing::Size(208, 22);
 			this->textBox3->TabIndex = 5;
 			// 
 			// label3
@@ -227,7 +227,7 @@ namespace Cafee {
 			this->label4->AutoSize = true;
 			this->label4->Location = System::Drawing::Point(3, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(208, 19);
+			this->label4->Size = System::Drawing::Size(208, 16);
 			this->label4->TabIndex = 6;
 			this->label4->Text = L"Тип";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -235,7 +235,7 @@ namespace Cafee {
 			// 
 			// Add
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 18);
+			this->AutoScaleDimensions = System::Drawing::SizeF(7, 14);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(540, 404);
 			this->Controls->Add(this->tableLayoutPanel1);

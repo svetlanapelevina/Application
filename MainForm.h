@@ -117,11 +117,11 @@ namespace Cafee {
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30.25F));
-			this->label1->Location = System::Drawing::Point(346, 36);
+			this->label1->Location = System::Drawing::Point(320, 48);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(157, 59);
+			this->label1->Size = System::Drawing::Size(205, 47);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Êàôå";
+			this->label1->Text = L"Ñòîëîâàÿ";
 			this->label1->Click += gcnew System::EventHandler(this, &MainForm::label1_Click);
 			// 
 			// AddMeal
@@ -146,7 +146,7 @@ namespace Cafee {
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(5, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(850, 28);
+			this->menuStrip1->Size = System::Drawing::Size(850, 24);
 			this->menuStrip1->TabIndex = 2;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -157,41 +157,41 @@ namespace Cafee {
 					this->îòêðûòüToolStripMenuItem, this->ñîõðàíèòüToolStripMenuItem, this->ñîõðàíèòüÊàêToolStripMenuItem, this->exitToolStripMenuItem
 			});
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(59, 24);
+			this->toolStripMenuItem1->Size = System::Drawing::Size(48, 20);
 			this->toolStripMenuItem1->Text = L"Ôàéë";
 			// 
 			// ñîçäàòüToolStripMenuItem
 			// 
 			this->ñîçäàòüToolStripMenuItem->Name = L"ñîçäàòüToolStripMenuItem";
-			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîçäàòüToolStripMenuItem->Text = L"Ñîçäàòü";
 			this->ñîçäàòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::ñîçäàòüToolStripMenuItem_Click);
 			// 
 			// îòêðûòüToolStripMenuItem
 			// 
 			this->îòêðûòüToolStripMenuItem->Name = L"îòêðûòüToolStripMenuItem";
-			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->îòêðûòüToolStripMenuItem->Text = L"Îòêðûòü";
 			this->îòêðûòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::openToolStripMenuItem_Click);
 			// 
 			// ñîõðàíèòüToolStripMenuItem
 			// 
 			this->ñîõðàíèòüToolStripMenuItem->Name = L"ñîõðàíèòüToolStripMenuItem";
-			this->ñîõðàíèòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->ñîõðàíèòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîõðàíèòüToolStripMenuItem->Text = L"Ñîõðàíèòü";
 			this->ñîõðàíèòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::saveToolStripMenuItem_Click);
 			// 
 			// ñîõðàíèòüÊàêToolStripMenuItem
 			// 
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Name = L"ñîõðàíèòüÊàêToolStripMenuItem";
-			this->ñîõðàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->ñîõðàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Text = L"Ñîõðàíèòü êàê";
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::saveToToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->exitToolStripMenuItem->Text = L"Âûõîä";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::exitToolStripMenuItem_Click);
 			// 
@@ -202,20 +202,20 @@ namespace Cafee {
 					this->îÏðîãðàììåToolStripMenuItem
 			});
 			this->ñïðàâêàToolStripMenuItem->Name = L"ñïðàâêàToolStripMenuItem";
-			this->ñïðàâêàToolStripMenuItem->Size = System::Drawing::Size(81, 24);
+			this->ñïðàâêàToolStripMenuItem->Size = System::Drawing::Size(65, 20);
 			this->ñïðàâêàToolStripMenuItem->Text = L"Ñïðàâêà";
 			// 
 			// ðóêîâîäñòâîToolStripMenuItem
 			// 
 			this->ðóêîâîäñòâîToolStripMenuItem->Name = L"ðóêîâîäñòâîToolStripMenuItem";
-			this->ðóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(187, 26);
+			this->ðóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(149, 22);
 			this->ðóêîâîäñòâîToolStripMenuItem->Text = L"Ðóêîâîäñòâî";
 			this->ðóêîâîäñòâîToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::textToolStripMenuItem_Click);
 			// 
 			// îÏðîãðàììåToolStripMenuItem
 			// 
 			this->îÏðîãðàììåToolStripMenuItem->Name = L"îÏðîãðàììåToolStripMenuItem";
-			this->îÏðîãðàììåToolStripMenuItem->Size = System::Drawing::Size(187, 26);
+			this->îÏðîãðàììåToolStripMenuItem->Size = System::Drawing::Size(149, 22);
 			this->îÏðîãðàììåToolStripMenuItem->Text = L"Î ïðîãðàììå";
 			this->îÏðîãðàììåToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::îÏðîãðàììåToolStripMenuItem_Click);
 			// 
@@ -264,7 +264,7 @@ namespace Cafee {
 			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 18);
+			this->AutoScaleDimensions = System::Drawing::SizeF(7, 14);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(850, 486);
 			this->Controls->Add(this->buttonChangeDelete);

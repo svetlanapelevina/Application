@@ -114,7 +114,7 @@ namespace Cafee {
 			this->listViewChangeDelete->HideSelection = false;
 			this->listViewChangeDelete->LabelEdit = true;
 			this->listViewChangeDelete->Location = System::Drawing::Point(22, 24);
-			this->listViewChangeDelete->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->listViewChangeDelete->Margin = System::Windows::Forms::Padding(2);
 			this->listViewChangeDelete->Name = L"listViewChangeDelete";
 			this->listViewChangeDelete->Size = System::Drawing::Size(395, 356);
 			this->listViewChangeDelete->TabIndex = 0;
@@ -160,7 +160,7 @@ namespace Cafee {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(452, 89);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(143, 20);
 			this->textBox1->TabIndex = 4;
@@ -169,7 +169,7 @@ namespace Cafee {
 			// buttonChange
 			// 
 			this->buttonChange->Location = System::Drawing::Point(491, 263);
-			this->buttonChange->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->buttonChange->Margin = System::Windows::Forms::Padding(2);
 			this->buttonChange->Name = L"buttonChange";
 			this->buttonChange->Size = System::Drawing::Size(74, 23);
 			this->buttonChange->TabIndex = 5;
@@ -180,7 +180,7 @@ namespace Cafee {
 			// buttonDelete
 			// 
 			this->buttonDelete->Location = System::Drawing::Point(491, 309);
-			this->buttonDelete->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->buttonDelete->Margin = System::Windows::Forms::Padding(2);
 			this->buttonDelete->Name = L"buttonDelete";
 			this->buttonDelete->Size = System::Drawing::Size(74, 24);
 			this->buttonDelete->TabIndex = 6;
@@ -191,7 +191,7 @@ namespace Cafee {
 			// buttonBack
 			// 
 			this->buttonBack->Location = System::Drawing::Point(22, 399);
-			this->buttonBack->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->buttonBack->Margin = System::Windows::Forms::Padding(2);
 			this->buttonBack->Name = L"buttonBack";
 			this->buttonBack->Size = System::Drawing::Size(72, 25);
 			this->buttonBack->TabIndex = 7;
@@ -204,7 +204,7 @@ namespace Cafee {
 			this->comboBoxField->FormattingEnabled = true;
 			this->comboBoxField->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Название", L"Стоимость" });
 			this->comboBoxField->Location = System::Drawing::Point(455, 172);
-			this->comboBoxField->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->comboBoxField->Margin = System::Windows::Forms::Padding(2);
 			this->comboBoxField->Name = L"comboBoxField";
 			this->comboBoxField->Size = System::Drawing::Size(143, 21);
 			this->comboBoxField->TabIndex = 8;
@@ -225,7 +225,7 @@ namespace Cafee {
 			// textBoxNew
 			// 
 			this->textBoxNew->Location = System::Drawing::Point(455, 226);
-			this->textBoxNew->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBoxNew->Margin = System::Windows::Forms::Padding(2);
 			this->textBoxNew->Name = L"textBoxNew";
 			this->textBoxNew->Size = System::Drawing::Size(143, 20);
 			this->textBoxNew->TabIndex = 10;
@@ -244,7 +244,7 @@ namespace Cafee {
 			// Refresh
 			// 
 			this->Refresh->Location = System::Drawing::Point(322, 399);
-			this->Refresh->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Refresh->Margin = System::Windows::Forms::Padding(2);
 			this->Refresh->Name = L"Refresh";
 			this->Refresh->Size = System::Drawing::Size(76, 25);
 			this->Refresh->TabIndex = 12;
@@ -268,9 +268,10 @@ namespace Cafee {
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->listViewChangeDelete);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
+			this->Name = L"ChangeAndDelete";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"ChangeAndDelete";
+			this->Text = L"Редактирование";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

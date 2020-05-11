@@ -163,7 +163,7 @@ namespace Cafee {
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
 			this->menuStrip1->Padding = System::Windows::Forms::Padding(5, 2, 0, 2);
-			this->menuStrip1->Size = System::Drawing::Size(905, 28);
+			this->menuStrip1->Size = System::Drawing::Size(905, 24);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -174,42 +174,42 @@ namespace Cafee {
 					this->îòêðûòüToolStripMenuItem, this->ñîõðàíèòüToolStripMenuItem, this->ñîõðàíèòüÊàêToolStripMenuItem, this->âûõîäToolStripMenuItem
 			});
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(59, 24);
+			this->toolStripMenuItem1->Size = System::Drawing::Size(48, 20);
 			this->toolStripMenuItem1->Text = L"Ôàéë";
 			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::toolStripMenuItem1_Click);
 			// 
 			// ñîçäàòüToolStripMenuItem
 			// 
 			this->ñîçäàòüToolStripMenuItem->Name = L"ñîçäàòüToolStripMenuItem";
-			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(192, 26);
+			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîçäàòüToolStripMenuItem->Text = L"Ñîçäàòü";
 			this->ñîçäàòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::addToolStripMenuItem_Click);
 			// 
 			// îòêðûòüToolStripMenuItem
 			// 
 			this->îòêðûòüToolStripMenuItem->Name = L"îòêðûòüToolStripMenuItem";
-			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(192, 26);
+			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->îòêðûòüToolStripMenuItem->Text = L"Îòêðûòü";
 			this->îòêðûòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::openToolStripMenuItem_Click);
 			// 
 			// ñîõðàíèòüToolStripMenuItem
 			// 
 			this->ñîõðàíèòüToolStripMenuItem->Name = L"ñîõðàíèòüToolStripMenuItem";
-			this->ñîõðàíèòüToolStripMenuItem->Size = System::Drawing::Size(192, 26);
+			this->ñîõðàíèòüToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîõðàíèòüToolStripMenuItem->Text = L"Ñîõðàíèòü";
 			this->ñîõðàíèòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::saveToolStripMenuItem_Click);
 			// 
 			// ñîõðàíèòüÊàêToolStripMenuItem
 			// 
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Name = L"ñîõðàíèòüÊàêToolStripMenuItem";
-			this->ñîõðàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(192, 26);
+			this->ñîõðàíèòüÊàêToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Text = L"Ñîõðàíèòü êàê";
 			this->ñîõðàíèòüÊàêToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::savetoToolStripMenuItem_Click);
 			// 
 			// âûõîäToolStripMenuItem
 			// 
 			this->âûõîäToolStripMenuItem->Name = L"âûõîäToolStripMenuItem";
-			this->âûõîäToolStripMenuItem->Size = System::Drawing::Size(192, 26);
+			this->âûõîäToolStripMenuItem->Size = System::Drawing::Size(154, 22);
 			this->âûõîäToolStripMenuItem->Text = L"Âûõîä";
 			this->âûõîäToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::exitToolStripMenuItem_Click);
 			// 
@@ -220,20 +220,20 @@ namespace Cafee {
 					this->îÏðîãðàììåToolStripMenuItem
 			});
 			this->ñïðàâêàToolStripMenuItem->Name = L"ñïðàâêàToolStripMenuItem";
-			this->ñïðàâêàToolStripMenuItem->Size = System::Drawing::Size(81, 24);
+			this->ñïðàâêàToolStripMenuItem->Size = System::Drawing::Size(65, 20);
 			this->ñïðàâêàToolStripMenuItem->Text = L"Ñïðàâêà";
 			// 
 			// ðóêîâîäñòâîToolStripMenuItem
 			// 
 			this->ðóêîâîäñòâîToolStripMenuItem->Name = L"ðóêîâîäñòâîToolStripMenuItem";
-			this->ðóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(187, 26);
+			this->ðóêîâîäñòâîToolStripMenuItem->Size = System::Drawing::Size(149, 22);
 			this->ðóêîâîäñòâîToolStripMenuItem->Text = L"Ðóêîâîäñòâî";
 			this->ðóêîâîäñòâîToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ðóêîâîäñòâîToolStripMenuItem_Click);
 			// 
 			// îÏðîãðàììåToolStripMenuItem
 			// 
 			this->îÏðîãðàììåToolStripMenuItem->Name = L"îÏðîãðàììåToolStripMenuItem";
-			this->îÏðîãðàììåToolStripMenuItem->Size = System::Drawing::Size(187, 26);
+			this->îÏðîãðàììåToolStripMenuItem->Size = System::Drawing::Size(149, 22);
 			this->îÏðîãðàììåToolStripMenuItem->Text = L"Î ïðîãðàììå";
 			this->îÏðîãðàììåToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::îÏðîãðàììåToolStripMenuItem_Click);
 			// 
@@ -253,7 +253,7 @@ namespace Cafee {
 			this->textBoxName->Location = System::Drawing::Point(94, 118);
 			this->textBoxName->Margin = System::Windows::Forms::Padding(2);
 			this->textBoxName->Name = L"textBoxName";
-			this->textBoxName->Size = System::Drawing::Size(88, 26);
+			this->textBoxName->Size = System::Drawing::Size(88, 22);
 			this->textBoxName->TabIndex = 2;
 			this->textBoxName->TextChanged += gcnew System::EventHandler(this, &MyForm::textBoxName_TextChanged);
 			// 
@@ -262,7 +262,7 @@ namespace Cafee {
 			this->textBoxFirstCost->Location = System::Drawing::Point(136, 82);
 			this->textBoxFirstCost->Margin = System::Windows::Forms::Padding(2);
 			this->textBoxFirstCost->Name = L"textBoxFirstCost";
-			this->textBoxFirstCost->Size = System::Drawing::Size(88, 26);
+			this->textBoxFirstCost->Size = System::Drawing::Size(88, 22);
 			this->textBoxFirstCost->TabIndex = 3;
 			this->textBoxFirstCost->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
@@ -271,7 +271,7 @@ namespace Cafee {
 			this->textBoxSecondCost->Location = System::Drawing::Point(269, 82);
 			this->textBoxSecondCost->Margin = System::Windows::Forms::Padding(2);
 			this->textBoxSecondCost->Name = L"textBoxSecondCost";
-			this->textBoxSecondCost->Size = System::Drawing::Size(88, 26);
+			this->textBoxSecondCost->Size = System::Drawing::Size(88, 22);
 			this->textBoxSecondCost->TabIndex = 5;
 			// 
 			// checkBoxDish
@@ -280,7 +280,7 @@ namespace Cafee {
 			this->checkBoxDish->Location = System::Drawing::Point(21, 45);
 			this->checkBoxDish->Margin = System::Windows::Forms::Padding(2);
 			this->checkBoxDish->Name = L"checkBoxDish";
-			this->checkBoxDish->Size = System::Drawing::Size(79, 23);
+			this->checkBoxDish->Size = System::Drawing::Size(66, 20);
 			this->checkBoxDish->TabIndex = 7;
 			this->checkBoxDish->Text = L"Áëþäî";
 			this->checkBoxDish->UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@ namespace Cafee {
 			this->checkBoxDessert->Location = System::Drawing::Point(198, 45);
 			this->checkBoxDessert->Margin = System::Windows::Forms::Padding(2);
 			this->checkBoxDessert->Name = L"checkBoxDessert";
-			this->checkBoxDessert->Size = System::Drawing::Size(82, 23);
+			this->checkBoxDessert->Size = System::Drawing::Size(69, 20);
 			this->checkBoxDessert->TabIndex = 8;
 			this->checkBoxDessert->Text = L"Äåñåðò";
 			this->checkBoxDessert->UseVisualStyleBackColor = true;
@@ -304,7 +304,7 @@ namespace Cafee {
 			this->checkBoxDrink->Location = System::Drawing::Point(107, 45);
 			this->checkBoxDrink->Margin = System::Windows::Forms::Padding(2);
 			this->checkBoxDrink->Name = L"checkBoxDrink";
-			this->checkBoxDrink->Size = System::Drawing::Size(93, 23);
+			this->checkBoxDrink->Size = System::Drawing::Size(75, 20);
 			this->checkBoxDrink->TabIndex = 9;
 			this->checkBoxDrink->Text = L"Íàïèòîê";
 			this->checkBoxDrink->UseVisualStyleBackColor = true;
@@ -316,7 +316,7 @@ namespace Cafee {
 			this->label1->Location = System::Drawing::Point(19, 84);
 			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(87, 19);
+			this->label1->Size = System::Drawing::Size(70, 16);
 			this->label1->TabIndex = 10;
 			this->label1->Text = L"Ñòîèìîñòü";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
@@ -327,7 +327,7 @@ namespace Cafee {
 			this->label2->Location = System::Drawing::Point(108, 84);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(35, 19);
+			this->label2->Size = System::Drawing::Size(28, 16);
 			this->label2->TabIndex = 11;
 			this->label2->Text = L"Îò:";
 			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
@@ -338,7 +338,7 @@ namespace Cafee {
 			this->label3->Location = System::Drawing::Point(240, 84);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(35, 19);
+			this->label3->Size = System::Drawing::Size(29, 16);
 			this->label3->TabIndex = 12;
 			this->label3->Text = L"Äî:";
 			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
@@ -349,7 +349,7 @@ namespace Cafee {
 			this->label4->Location = System::Drawing::Point(19, 122);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(83, 19);
+			this->label4->Size = System::Drawing::Size(69, 16);
 			this->label4->TabIndex = 13;
 			this->label4->Text = L"Íàçâàíèå:";
 			this->label4->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
@@ -425,7 +425,7 @@ namespace Cafee {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 18);
+			this->AutoScaleDimensions = System::Drawing::SizeF(7, 14);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(905, 601);
 			this->Controls->Add(this->button2);
@@ -446,6 +446,7 @@ namespace Cafee {
 			this->Font = (gcnew System::Drawing::Font(L"Tahoma", 9.25F));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->MainMenuStrip = this->menuStrip1;
+			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Ìåíþ";
 			this->menuStrip1->ResumeLayout(false);
